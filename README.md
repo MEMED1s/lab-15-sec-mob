@@ -77,11 +77,10 @@ Après la redirection des ports, la commande suivante permet de lister les appli
 
 Cette commande affiche les applications installées sur l’émulateur Android ainsi que leurs identifiants de package.
 
-### Capture à insérer : pic1.png
 
-Place ici la capture montrant les commandes ADB et la liste des applications avec Frida.
+<img width="1449" height="1085" alt="pic1" src="https://github.com/user-attachments/assets/b431ba13-56e0-42a8-b9b8-cee48d034899" />
 
-![Capture 1 - Liste des applications avec Frida](./pic1.png)
+
 
 ---
 
@@ -97,11 +96,8 @@ Le listener doit être configuré pour accepter les connexions provenant de l’
 
 Dans ce lab, le proxy listener est configuré sur toutes les interfaces afin de permettre la communication entre Android et Burp Suite.
 
-### Capture à insérer : pic2.png
+<img width="532" height="353" alt="pic2" src="https://github.com/user-attachments/assets/83c5c866-1a77-4c15-905b-fa07dcc0b6fd" />
 
-Place ici la capture montrant la configuration du proxy listener dans Burp Suite.
-
-![Capture 2 - Configuration du proxy Burp Suite](./pic2.png)
 
 ---
 
@@ -119,11 +115,11 @@ Cette étape permet de rediriger le trafic réseau de l’émulateur Android ver
 
 Le but est de pouvoir observer les requêtes générées par l’application pendant son exécution.
 
-### Capture à insérer : pic3.png
 
-Place ici la capture montrant la configuration manuelle du proxy dans Android.
+<img width="363" height="733" alt="pic3" src="https://github.com/user-attachments/assets/345c5fc2-75d6-4c0b-89b1-805b484ae186" />
 
-![Capture 3 - Configuration proxy Android](./pic3.png)
+
+
 
 ---
 
@@ -141,11 +137,7 @@ Le script utilisé permet d’observer certains mécanismes de protection de l�
 
 L’exécution montre que l’application est lancée dans l’émulateur Android et que certains contrôles sont interceptés.
 
-### Capture à insérer : pic4.png
-
-Place ici la capture montrant le lancement de l’application avec Frida et le script de bypass root.
-
-![Capture 4 - Lancement de l’application avec Frida](./pic4.png)
+<img width="1539" height="1022" alt="pic4" src="https://github.com/user-attachments/assets/6c28fa89-8eb3-4885-a55e-cce618ef50c7" />
 
 ---
 
@@ -164,11 +156,8 @@ Ces handlers permettent ensuite d’observer les appels liés aux certificats, a
 
 Cette étape est importante pour comprendre comment l’application gère les connexions HTTPS.
 
-### Capture à insérer : pic5.png
+<img width="832" height="362" alt="pic5" src="https://github.com/user-attachments/assets/96e5155b-8fd8-4a7b-9c96-bc301c584a68" />
 
-Place ici la capture montrant la génération automatique des handlers SSL/TLS avec Frida Trace.
-
-![Capture 5 - Analyse SSL TLS avec Frida Trace](./pic5.png)
 
 ---
 
@@ -199,13 +188,8 @@ Le crash peut être causé par plusieurs éléments :
 
 Même si l’application a crashé, ce résultat reste utile car il montre que l’analyse dynamique permet d’identifier les réactions de sécurité d’une application.
 
-### Capture à insérer : pic6.png
+<img width="1364" height="1153" alt="pic6" src="https://github.com/user-attachments/assets/9e1fb62a-c9af-4509-b8b9-78c8ccabea85" />
 
-Place ici la capture montrant le test du SSL Pinning et le crash de l’application.
-
-![Capture 6 - Test SSL Pinning avec Frida](./pic6.png)
-
----
 
 ## 11. Résultats obtenus
 
